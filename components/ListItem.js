@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
+import { environment } from '../assets/environment';
 
 const ListItem = ({item, deleteItem}) => {
   return (
@@ -16,7 +17,7 @@ const ListItem = ({item, deleteItem}) => {
 const styles = StyleSheet.create({
   listItem: {
     padding: 15,
-    backgroundColor: '#f8f8f8',
+    backgroundColor: environment.backgroundColor,
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
   },
